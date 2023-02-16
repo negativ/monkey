@@ -26,12 +26,13 @@ var simpleTokens = map[rune]token.TokenType{
 }
 
 var keywords = map[string]token.TokenType{
-	"let":   token.LET,
-	"fn":    token.FUNCTION,
-	"if":    token.IF,
-	"else":  token.ELSE,
-	"true":  token.TRUE,
-	"false": token.FALSE,
+	"let":    token.LET,
+	"fn":     token.FUNCTION,
+	"if":     token.IF,
+	"else":   token.ELSE,
+	"true":   token.TRUE,
+	"false":  token.FALSE,
+	"return": token.RET,
 }
 
 func New(data string) *Lexer {

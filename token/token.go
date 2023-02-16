@@ -48,6 +48,7 @@ const (
 	ELSE
 	TRUE
 	FALSE
+	RET
 )
 
 func (t TokenType) String() string {
@@ -118,6 +119,8 @@ func (t TokenType) String() string {
 		return "<BSR>"
 	case NEQ:
 		return "<NEQ>"
+	case RET:
+		return "<RET>"
 	}
 
 	panic("Invalid argument")
