@@ -42,7 +42,7 @@ func (id *Identifier) TokenLiteral() string {
 }
 
 type LetStatement struct {
-	Name  *LetStatement
+	Name  *Identifier
 	Value *Expression
 	Token token.Token
 }
